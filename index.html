@@ -2,81 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <m<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Login Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f3f4f6;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
+      background: linear-gradient(135deg, #6EE7B7, #3B82F6);
     }
 
     .login-container {
-      background-color: #fff;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
       padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       width: 320px;
       text-align: center;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.3);
     }
 
     .logo {
-      width: 100px;
-      height: 100px;
+      width: 90px;
+      height: 90px;
       border-radius: 50%;
       margin-bottom: 20px;
       object-fit: cover;
+      border: 2px solid #fff;
     }
 
     h2 {
-      margin-bottom: 20px;
-      color: #333;
+      margin-bottom: 24px;
+      color: #fff;
+      font-weight: 600;
     }
 
     input[type="text"],
     input[type="password"] {
       width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      border: 1px solid #ccc;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
       border-radius: 8px;
-      box-sizing: border-box;
+      outline: none;
+      background: rgba(255, 255, 255, 0.8);
+      font-size: 14px;
     }
 
     button {
       background-color: #2563eb;
       color: white;
       border: none;
-      padding: 10px;
+      padding: 12px;
       width: 100%;
       border-radius: 8px;
       cursor: pointer;
       font-size: 16px;
+      margin-top: 10px;
+      transition: all 0.3s ease;
     }
 
     button:hover {
-      background-color: #1d4ed8;
+      background-color: #1e40af;
+      transform: scale(1.02);
+    }
+
+    p {
+      margin-top: 15px;
+      color: #f9fafb;
+      font-size: 14px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <div class="login-container">
+    <!-- Replace logo.png with your actual image file name -->
     <img src="logo.png" alt="Logo" class="logo" />
-    <h2>Login</h2>
+    <h2>Welcome Back</h2>
     <form>
       <input type="text" placeholder="Username" required />
       <input type="password" placeholder="Password" required />
       <button type="submit">Login</button>
     </form>
+    <p>Don't have an account? <a href="#">Sign up</a></p>
   </div>
 </body>
 </html>
-
